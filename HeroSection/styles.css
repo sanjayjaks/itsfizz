@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+* {
+  background-color: black !important;  /* Force all backgrounds to black */
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+    overflow-x: hidden;
+    cursor: none;
+}
+
+/* Custom Cursor - Works for Entire Website */
+.custom-cursor {
+    width: 20px;
+    height: 20px;
+    border: 2px solid cyan;
+    border-radius: 50%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s linear;
+    z-index: 9999;
+}
+
+/* Cursor Effect on Hover */
+.hover-effect {
+    background: cyan;
+    transform: scale(1.5);
+}
+
+/* Ensure all sections have a black background */
+.hero, .about, .gallery, .contact {
+    background: black !important; 
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.glow-text {
+    font-size: 3rem;
+    text-shadow: 0 0 15px cyan, 0 0 25px cyan;
+}
+
+/* 🎯 **Make Hero Images Smaller** */
+.hero img {
+    width: 150px; /* Set a smaller width */
+    height: auto;
+    border-radius: 50px;
+    margin-top: 20px;
+}
+
+/* About Section */
+.about h2, .gallery h2, .contact h2 {
+    text-transform: uppercase;
+}
+
+/* Ensure Gallery Cards Have a Black Background */
+/* Centering the Showcase Section */
+/* Ensure the gallery section has a black background */
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  background-color: black; /* Ensure black background */
+  padding: 20px; /* Prevent content sticking to edges */
+}
+
+/* Style the individual cards */
+.card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: transparent; /* Remove white background */
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* Ensure images scale correctly */
+.card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+
+
+
+.card:hover img {
+    transform: scale(1.1);
+    filter: brightness(1.2);
+}
+
+/* Contact Section */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+
+input, textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background: black;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid cyan;
+}
+
+button {
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background: rgb(255, 255, 255) !important;
+  color: rgb(18, 114, 152) !important;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: 0.3s;
+    background-color: rgb(255, 255, 255)!important;
+}
+
+button:hover {
+    background: white;
+    color: rgb(251, 250, 250);
+}
